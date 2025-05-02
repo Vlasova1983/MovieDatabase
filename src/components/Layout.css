@@ -1,0 +1,88 @@
+.App {
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+.App.light {
+    background-color: #f5f5f5;
+    color: #282c34;
+}
+  
+.App.dark {
+    background-color: #282c34;
+    color: #f5f5f5;
+}
+
+.App-logo{
+    display: flex;
+    gap:10px;
+} 
+.App-logo img{
+    width: 50px;
+}
+.App-header {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 999;
+    width: 100%;    
+    text-align: center;
+    transition: background-color 0.3s ease;    
+}
+  
+.App-header.light {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+.App-header.dark {
+    background-color: #1a1d24;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Nav-list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;   
+    gap: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    padding:0;
+}
+
+.Nav-link.light {
+    text-decoration: none; 
+    color: #1a1d24;
+    cursor: pointer;
+    &:hover{
+        color: #797a7e; 
+    } 
+}
+.Nav-link.dark {
+    text-decoration: none; 
+    color: #ffffff;
+    cursor: pointer;
+    &:hover, &:focus{
+        color: #797a7e; 
+    } 
+}
+@media (max-width: 768px) {
+    .Nav-list{            
+        gap: 50px;
+    }
+}
+@media (max-width: 600px) {
+    .Nav-list{
+        position: fixed;
+        left: 30px;
+        top:70px;       
+        gap: 90px;
+        font-size: 16px;
+    }
+
+    .App-header{
+        padding-bottom: 80px;
+        padding-top: 10px;
+    }
+}
