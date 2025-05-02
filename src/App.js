@@ -7,7 +7,7 @@ import { Layout } from "./components/Layout";
 
 export default function App() {  
   return (
-    <BrowserRouter  basename="MovieDatabase">
+    <BrowserRouter  basename="/">
       <Layout>              
           <Routes>
             <Route path="/" element={<HomePage/>}/>
