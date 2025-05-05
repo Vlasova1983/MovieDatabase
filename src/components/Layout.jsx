@@ -11,7 +11,7 @@ export const Layout = ({ children }) => {
             <header className={`App-header ${theme}`}>
                 <div className={'App-logo'}>
                     <img
-                        src={'/favicon.ico'}
+                        src={'./favicon.ico'}
                         alt="Logo"
                     />
                     <p>Movie Database</p>
